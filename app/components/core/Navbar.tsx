@@ -15,7 +15,7 @@ export default function Navbar() {
       <h1>PORTFOLIO</h1>
       <a href="">About Me</a>
       <a href="">Work Experience</a>
-      <a href="">Projects</a>
+      {/* <a href="">Projects</a> */}
       <a href="">Education</a>
       <a href="">Contacts</a>
     </nav>
