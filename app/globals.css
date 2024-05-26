@@ -13,6 +13,14 @@ h1 {
     @apply font-bold
 }
 
+main {
+    @apply 
+    max-w-5xl 
+    mx-auto
+    my-12
+    px-8
+}
+
 /* nav styles */
 
 nav {
