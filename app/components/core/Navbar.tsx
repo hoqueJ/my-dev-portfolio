@@ -12,7 +12,7 @@ export default function Navbar() {
         quality={100}
         placeholder="blur"
       />
-      <h1>PORTFOLIO</h1>
+      <h1 className="text-lg">PORTFOLIO</h1>
       <a href="">About Me</a>
       <a href="">Work Experience</a>
       {/* <a href="">Projects</a> */}

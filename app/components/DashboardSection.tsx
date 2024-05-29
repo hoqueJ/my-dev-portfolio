@@ -10,8 +10,8 @@ export default function Dashboard() {
 
   return (
     <main className="flex flex-col items-center text-center">
-      <h1 className="h-14 text-4xl">{text}</h1>
-      <p className="my-5 font-semibold">I will create the ultimate digital experience for you.</p>
+      <h1 className="h-14">{text}</h1>
+      <p className="font-semibold">I will create the ultimate digital experience for you.</p>
       <p>
         I&apos;m a Web Developer who enjoys building beautiful, immersive
         websites and landing pages for businesses using the latest technologies

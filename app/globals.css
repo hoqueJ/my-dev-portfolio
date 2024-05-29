@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    @apply font-bold
+    @apply font-bold text-4xl
 }
 
 main {
@@ -19,6 +19,10 @@ main {
     mx-auto
     my-12
     px-8
+}
+
+p {
+    @apply my-5
 }
 
 /* nav styles */
@@ -39,3 +43,22 @@ nav a:hover {
     @apply text-blue-800
 }
 
+/* card styles */
+.card {
+    @apply 
+      bg-black 
+      shadow-sm 
+      rounded-md 
+      py-3 px-4 my-4 
+      relative 
+      overflow-hidden;
+  }
+  .card p {
+    @apply 
+      font-semibold 
+      text-white 
+      text-sm
+      my-1 
+      leading-6;
+  }
+  
