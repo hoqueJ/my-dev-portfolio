@@ -1,30 +1,28 @@
-import React from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
-  title: string;
+  instituteName: string;
+  fieldOfStudy: string;
   date: string;
-  companyUrl?: string;
-  responsibilities: string[];
+  topics: string[];
 };
 
-export default function WorkExperienceCard({
-  title,
+export default function EducationCard({
+  instituteName,
+  fieldOfStudy,
   date,
-  companyUrl,
-  responsibilities,
+  topics,
 }: Props) {
   return (
     <div className="flex flex-col w-full my-3 p-3 text-left border border-solid border-black rounded-md shadow-md hover:shadow-lg">
-      <h3 className="font-semibold">{title}</h3>
-      <small className="italic">{date}</small>
-      <p className="text-sm mb-3">{companyUrl}</p>
+      <h3 className="font-semibold">{instituteName}</h3>
+      <small className="my-1">{fieldOfStudy}</small>
+      <p className="text-sm mb-3 italic">{date}</p>
 
-      <p className="my-1 font-semibold">Responsibilities:</p>
+      <p className="my-1 font-semibold">Topics covered:</p>
       <div>
-        {responsibilities.map((responsibility: string, index: number) => (
+        {topics.map((topic: string, index: number) => (
           <ul
             key={index}
             className="flex flex-row justify-start items-center my-1"
@@ -35,7 +33,7 @@ export default function WorkExperienceCard({
               width={20}
               className="mr-2"
             />
-            <li className="my-1">{responsibility}</li>
+            <li className="my-1">{topic}</li>
           </ul>
         ))}
       </div>
