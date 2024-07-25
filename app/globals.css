@@ -4,10 +4,10 @@
 
 /* base styles */
 
-body {
-    /* background: #ebf0fa; */
+/* body {
+    background: #0e7490;
     @apply m-8
-}
+} */
 
 h1 {
     @apply font-bold text-4xl
@@ -27,16 +27,16 @@ p {
 
 /* nav styles */
 
-nav {
+/* nav {
     @apply
     pb-4 
     flex items-center gap-5
     my-5 mx-auto
     max-w-5xl;
-}
+} */
 
 nav a {
-    @apply text-blue-700
+    @apply text-white
 }
 
 nav a:hover {

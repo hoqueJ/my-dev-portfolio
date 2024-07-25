@@ -34,7 +34,7 @@ export default function EducationSection() {
     },
   ];
   return (
-    <main className="w-full mt-[5rem] text-center">
+    <main id="education" className="w-full mt-[5rem] text-center">
       <h1 className="mb-5">Education</h1>
       <hr className="my-4 border-black" />
       <div className="flex flex-col justify-center items-center py-2">
