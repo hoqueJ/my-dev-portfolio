@@ -28,7 +28,7 @@ export default function WorkExperienceSection() {
     },
   ];
   return (
-    <main className="w-full mt-[5rem] text-center">
+    <main id="work-experience" className="w-full mt-[5rem] text-center">
       <h1 className="mb-5">Work Experience</h1>
       <hr className="my-4 border-black" />
       <div className="flex flex-col justify-center items-center py-2">

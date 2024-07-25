@@ -4,7 +4,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function ContactSection() {
   return (
-    <footer className="mt-[5rem] mb-[5rem] text-center">
+    <footer id="contacts" className="mt-[5rem] mb-[5rem] text-center">
       <h1 className="mb-5">Contact</h1>
       <hr className="my-4 border-black" />
       <h3 className="text-2xl font-semibold">Connect With Me</h3>

@@ -15,11 +15,11 @@ export default function AboutMeSection() {
     "Docker",
   ];
   return (
-    <main className="text-center">
+    <main id="about-me" className="text-center">
       <h1>About Me</h1>
       <p>
         Hi, my name&apos;s Jubayedul. Thanks for taking out the time to check
-        out my portfolio 😊! I&apos;m a Junior Frontend Web Developer, I enjoy
+        out my portfolio! I&apos;m a Junior Frontend Web Developer, I enjoy
         building amazing websites and landing pages that are attractive,
         immersive and perform well. I am currently learning Backend development
         as well as Database Interaction on the Cloud in order to expand my
