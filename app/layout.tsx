@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
 // components
-// import Navbar from "./components/core/Navbar";
-import Header from "./components/core/Header";
+import Header from "./sections/core/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: "300" });
 
 export const metadata: Metadata = {
-  title: "JUBAYEDUL HOQUE",
+  title: "Jubayedul Hoque",
   description: "My Dev Portfolio",
+  icons: "/logo-dark-full.png",
 };
 
 export default function RootLayout({
@@ -20,9 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <Header />
-        {/* <Navbar /> */}
         {children}
       </body>
     </html>

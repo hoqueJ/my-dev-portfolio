@@ -15,17 +15,16 @@ export default function EducationCard({
   topics,
 }: Props) {
   return (
-    <div className="flex flex-col w-full my-3 p-3 text-left border border-solid border-black rounded-md shadow-md hover:shadow-lg">
+    <div className="my-3 flex w-full flex-col rounded-md border border-solid border-gray-500 bg-gray-500 p-3 text-left text-white shadow-md hover:shadow-xl">
       <h3 className="font-semibold">{instituteName}</h3>
       <small className="my-1">{fieldOfStudy}</small>
-      <p className="text-sm mb-3 italic">{date}</p>
-
+      <p className="mb-3 text-sm italic">{date}</p>
       <p className="my-1 font-semibold">Topics covered:</p>
       <div>
         {topics.map((topic: string, index: number) => (
           <ul
             key={index}
-            className="flex flex-row justify-start items-center my-1"
+            className="my-1 flex flex-row items-center justify-start"
           >
             <FontAwesomeIcon
               icon={faCaretRight}

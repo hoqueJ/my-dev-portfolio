@@ -1,4 +1,4 @@
-import EducationCard from "./core/EducationCard";
+import EducationCard from "../sections/components/EducationCard";
 
 type Education = {
   instituteName: string;
@@ -34,10 +34,13 @@ export default function EducationSection() {
     },
   ];
   return (
-    <main id="education" className="w-full mt-[5rem] text-center">
-      <h1 className="mb-5">Education</h1>
+    <main
+      id="education"
+      className="my-[5rem] w-2/3 text-justify text-sm md:max-w-5xl md:text-base"
+    >
+      <h1>Education</h1>
       <hr className="my-4 border-black" />
-      <div className="flex flex-col justify-center items-center py-2">
+      <div className="flex flex-col items-center justify-center py-2">
         {education.map((education: Education, index: number) => (
           <EducationCard
             key={index}

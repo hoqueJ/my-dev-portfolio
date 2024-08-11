@@ -1,9 +1,9 @@
-import DashboardSection from "./components/DashboardSection";
-import AboutMeSection from "./components/AboutMeSection";
-import WorkExperienceSection from "./components/WorkExperienceSection";
-import EducationSection from "./components/EducationSection";
-import ProjectsSection from "./components/ProjectsSection";
-import ContactSection from "./components/ContactSection";
+import DashboardSection from "./sections/DashboardSection";
+import AboutMeSection from "./sections/AboutMeSection";
+import WorkExperienceSection from "./sections/WorkExperienceSection";
+import EducationSection from "./sections/EducationSection";
+import ProjectsSection from "./sections/ProjectsSection";
+import ContactSection from "./sections/ContactSection";
 
 export default function Home() {
   return (
