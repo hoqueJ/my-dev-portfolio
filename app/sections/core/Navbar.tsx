@@ -34,16 +34,20 @@ export default function Navbar() {
       text: "Education",
     },
     {
-      href: "#contacts",
-      text: "Contacts",
+      href: "#contact",
+      text: "Contact",
     },
   ];
 
   return (
     <>
-      <div className="hidden md:flex flex-row gap-5 md:absolute right-2 text-white">
+      <div className="right-2 hidden flex-row gap-5 text-white md:absolute md:flex">
         {navItems.map((navItem, index) => (
-          <a key={index} href={navItem.href}>
+          <a
+            key={index}
+            href={navItem.href}
+            className="transition duration-500 ease-in hover:border-b-2 hover:border-white hover:text-black"
+          >
             {navItem.text}
           </a>
         ))}
@@ -68,12 +72,15 @@ export default function Navbar() {
         </button>
       </div>
       {isOpen && (
-        <div className="flex flex-col justify-center basis-full text-white">
+        <div className="flex basis-full flex-col justify-center text-white">
           {navItems.map((navItem, index) => (
             <a
               key={index}
               href={navItem.href}
-              className="text-center py-3 border-t border-gray-600"
+              className="border-t border-stone-500 py-3 text-center transition duration-500 ease-in hover:text-black"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
             >
               {navItem.text}
             </a>

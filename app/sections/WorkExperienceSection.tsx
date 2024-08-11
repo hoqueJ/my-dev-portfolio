@@ -1,6 +1,4 @@
-import React from "react";
-
-import WorkExperienceCard from "./core/WorkExperienceCard";
+import WorkExperienceCard from "../sections/components/WorkExperienceCard";
 
 type WorkExperience = {
   title: string;
@@ -28,10 +26,13 @@ export default function WorkExperienceSection() {
     },
   ];
   return (
-    <main id="work-experience" className="w-full mt-[5rem] text-center">
-      <h1 className="mb-5">Work Experience</h1>
+    <main
+      id="work-experience"
+      className="my-[5rem] w-2/3 text-justify text-sm md:max-w-5xl md:text-base"
+    >
+      <h1>Work Experience</h1>
       <hr className="my-4 border-black" />
-      <div className="flex flex-col justify-center items-center py-2">
+      <div className="flex flex-col items-center justify-center py-2">
         {workExperiences.map(
           (workExperience: WorkExperience, index: number) => (
             <WorkExperienceCard
@@ -41,7 +42,7 @@ export default function WorkExperienceSection() {
               companyUrl={workExperience.companyUrl}
               responsibilities={workExperience.responsibilities}
             />
-          )
+          ),
         )}
       </div>
     </main>

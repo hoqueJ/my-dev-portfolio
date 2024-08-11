@@ -4,61 +4,37 @@
 
 /* base styles */
 
-/* body {
-    background: #0e7490;
-    @apply m-8
-} */
+body {
+  background: #a8a29e;
+}
 
 h1 {
-    @apply font-bold text-4xl
+  @apply text-2xl font-bold md:text-4xl;
 }
 
 main {
-    @apply 
-    max-w-5xl 
-    mx-auto
-    my-12
-    px-8
+  @apply mx-auto;
 }
 
-p {
-    @apply my-5
-}
+/* footer styles */
 
-/* nav styles */
-
-/* nav {
-    @apply
-    pb-4 
-    flex items-center gap-5
-    my-5 mx-auto
-    max-w-5xl;
-} */
-
-nav a {
-    @apply text-white
-}
-
-nav a:hover {
-    @apply text-blue-800
+footer a {
+  @apply hover:text-stone-400;
 }
 
 /* card styles */
+
 .card {
-    @apply 
-      bg-black 
-      shadow-sm 
-      rounded-md 
-      py-3 px-4 my-4 
-      relative 
-      overflow-hidden;
-  }
-  .card p {
-    @apply 
-      font-semibold 
-      text-white 
-      text-sm
-      my-1 
-      leading-6;
-  }
-  
+  @apply relative my-2 h-12 w-20 shrink-0 rounded-md bg-black/90 sm:h-24 sm:w-40;
+}
+
+.card p {
+  @apply absolute left-1 top-1 text-xs font-extralight text-white sm:left-2 sm:top-2 sm:text-xl;
+}
+
+/* contact links styles */
+
+.icon {
+  height: 35px !important;
+  width: 35px !important;
+}
