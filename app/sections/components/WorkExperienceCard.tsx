@@ -15,7 +15,7 @@ export default function WorkExperienceCard({
   responsibilities,
 }: Props) {
   return (
-    <div className="my-3 flex w-full flex-col rounded-md border border-solid border-gray-500 bg-gray-500 p-3 text-left text-white shadow-md hover:shadow-xl">
+    <div className="my-3 flex w-full flex-col rounded-md border border-solid border-stone-400 bg-stone-300 p-3 text-left text-black shadow-md hover:shadow-xl">
       <h3 className="font-semibold">{title}</h3>
       <small className="italic">{date}</small>
       <p className="mb-3 text-sm">{companyUrl}</p>
