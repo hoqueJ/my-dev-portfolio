@@ -15,7 +15,7 @@ export default function EducationCard({
   topics,
 }: Props) {
   return (
-    <div className="my-3 flex w-full flex-col rounded-md border border-solid border-gray-500 bg-gray-500 p-3 text-left text-white shadow-md hover:shadow-xl">
+    <div className="my-3 flex w-full flex-col rounded-md border border-solid border-stone-400 bg-stone-300 p-3 text-left text-black shadow-md hover:shadow-xl">
       <h3 className="font-semibold">{instituteName}</h3>
       <small className="my-1">{fieldOfStudy}</small>
       <p className="mb-3 text-sm italic">{date}</p>
