@@ -21,10 +21,10 @@ export default function Navbar() {
       href: "#about-me",
       text: "About Me",
     },
-    {
-      href: "#work-experience",
-      text: "Work Experience",
-    },
+    // {
+    //   href: "#work-experience",
+    //   text: "Work Experience",
+    // },
     // {
     //   href: "#projects",
     //   text: "Projects",
@@ -46,7 +46,7 @@ export default function Navbar() {
           <a
             key={index}
             href={navItem.href}
-            className="transition duration-500 ease-in hover:border-b-2 hover:border-white hover:text-black"
+            className="hover:text-mosslands transition duration-500 ease-in hover:border-b-2 hover:border-white"
           >
             {navItem.text}
           </a>
@@ -72,12 +72,12 @@ export default function Navbar() {
         </button>
       </div>
       {isOpen && (
-        <div className="flex basis-full flex-col justify-center text-white">
+        <div className="bg-mosslands flex basis-full flex-col justify-center text-white">
           {navItems.map((navItem, index) => (
             <a
               key={index}
               href={navItem.href}
-              className="border-t border-stone-500 py-3 text-center transition duration-500 ease-in hover:text-black"
+              className="border-night-sky border-t py-3 text-center transition duration-500 ease-in"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}

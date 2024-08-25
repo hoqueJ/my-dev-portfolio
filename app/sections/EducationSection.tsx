@@ -11,7 +11,7 @@ export default function EducationSection() {
     {
       instituteName:
         "HyperionDev Skills Bootcamp - (Co-certified by the University of Nottingham, UK)",
-      fieldOfStudy: "Full-Stack Web Development",
+      fieldOfStudy: "Web Development",
       date: "November 2022 - March 2023",
       topics: [
         "HTML",
@@ -39,7 +39,7 @@ export default function EducationSection() {
       className="my-[5rem] w-2/3 text-justify text-sm md:max-w-5xl md:text-base"
     >
       <h1>Education</h1>
-      <hr className="my-4 border-black" />
+      <hr />
       <div className="flex flex-col items-center justify-center py-2">
         {education.map((education: Education, index: number) => (
           <EducationCard

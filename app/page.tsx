@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <DashboardSection />
       <AboutMeSection />
-      <WorkExperienceSection />
+      {/* <WorkExperienceSection /> */}
       <EducationSection />
       {/* <ProjectsSection /> */}
       <ContactSection />
