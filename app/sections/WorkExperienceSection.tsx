@@ -31,7 +31,7 @@ export default function WorkExperienceSection() {
       className="my-[5rem] w-2/3 text-justify text-sm md:max-w-5xl md:text-base"
     >
       <h1>Work Experience</h1>
-      <hr className="my-4 border-black" />
+      <hr />
       <div className="flex flex-col items-center justify-center py-2">
         {workExperiences.map(
           (workExperience: WorkExperience, index: number) => (
